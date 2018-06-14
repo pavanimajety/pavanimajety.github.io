@@ -19,11 +19,11 @@ knowledge of the same.
 Other Internships and project related experience:
 Embedded Systems:
 - development of Real-Time Micro-controller Firmware for various applications ranging from biomedical devices to automotive applications.
-** Experience of working with various communication protocols like CAN, SPI, I2C, Zigbee, UART for sensor interfaces.
-** Micro-controllers/Dev Boards: Arm Cortex-M4, Intel 8051, TI -MSP430, DSK6713, Arduino, Rasberry Pi, Renesas S7G2
-** PCB Design experience with EAGLE
+  - Experience of working with various communication protocols like CAN, SPI, I2C, Zigbee, UART for sensor interfaces.
+  - Micro-controllers/Dev Boards: Arm Cortex-M4, Intel 8051, TI -MSP430, DSK6713, Arduino, Rasberry Pi, Renesas S7G2
+  - PCB Design experience with EAGLE
 List of Projects:
-** A test-bed to classify different materials based on their elastic-responses
-** Embedded system to recognise heart diseases based on the heart sounds recorded real time through a stethoscope
-** A Full-fledged Nurse Call system for managing hospitals developed on 8051
-** An Adaptive Cruise Control model on CAN
+- A test-bed to classify different materials based on their elastic-responses
+- Embedded system to recognise heart diseases based on the heart sounds recorded real time through a stethoscope
+- A Full-fledged Nurse Call system for managing hospitals developed on 8051
+- An Adaptive Cruise Control model on CAN
