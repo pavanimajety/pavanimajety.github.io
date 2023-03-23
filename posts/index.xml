@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Posts on Pavani Majety</title>
+    <link>https://pavanimajety.github.io/posts/</link>
+    <description>Recent content in Posts on Pavani Majety</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Sat, 15 Jan 2022 19:40:30 -0500</lastBuildDate><atom:link href="https://pavanimajety.github.io/posts/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Installing Halide in Ubuntu/Pop OS with vcpkg</title>
+      <link>https://pavanimajety.github.io/posts/halide_install/</link>
+      <pubDate>Sat, 15 Jan 2022 19:40:30 -0500</pubDate>
+      
+      <guid>https://pavanimajety.github.io/posts/halide_install/</guid>
+      <description>Instructions from Halide blogs
+Install cmake if your don&amp;rsquo;t have it already. Download the precompiled binaries from: https://cmake.org/download/
+If you prefer installing from the source, follow the instructions on the page.
+The second step is to install halide with vcpkg. Run the following command once you have installed vcpkg. xxx@xxx-os:~$ ./vcpkg/vcpkg install halide:x64-linux After some log ..
+Total elapsed time: 55.61 min
+The package halide provides CMake targets:
+set(CMAKE_CXX_STANDARD 17) set(CMAKE_CXX_STANDARD_REQUIRED YES) set(CMAKE_CXX_EXTENSIONS NO) find_package(Halide REQUIRED) # JIT mode: add_executable(my_halide_app main.</description>
+    </item>
+    
+    <item>
+      <title>Halide</title>
+      <link>https://pavanimajety.github.io/posts/halide_dsl/</link>
+      <pubDate>Sat, 15 Jan 2022 11:29:43 -0500</pubDate>
+      
+      <guid>https://pavanimajety.github.io/posts/halide_dsl/</guid>
+      <description>Sources: Halide Cpp Con 2020 1 Martin Fowler Internal DSLs 2
+Let&amp;rsquo;s talk domain specific languages.. If you don&amp;rsquo;t know about these, let&amp;rsquo;s just say domain specific languages are programming languages that are specialized and restricted to best meet the needs of a specific domain. The goal of a DSL is exploit those restrictions for faster performance, easier maintenance, safety guarentees and so on. The most popular one most of you all know is HTML &amp;ndash; short for HyperText Markup Language.</description>
+    </item>
+    
+  </channel>
+</rss>
