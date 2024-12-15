@@ -2,24 +2,24 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Posts on Pavani Majety</title>
-    <link>http://localhost:1313/posts/</link>
+    <link>https://pavanimajety.github.io/posts/</link>
     <description>Recent content in Posts on Pavani Majety</description>
     <generator>Hugo</generator>
     <language>en-us</language>
     <lastBuildDate>Sat, 15 Jan 2022 19:40:30 -0500</lastBuildDate>
-    <atom:link href="http://localhost:1313/posts/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="https://pavanimajety.github.io/posts/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Installing Halide in Ubuntu/Pop OS with vcpkg</title>
-      <link>http://localhost:1313/posts/halide_install/</link>
+      <link>https://pavanimajety.github.io/posts/halide_install/</link>
       <pubDate>Sat, 15 Jan 2022 19:40:30 -0500</pubDate>
-      <guid>http://localhost:1313/posts/halide_install/</guid>
+      <guid>https://pavanimajety.github.io/posts/halide_install/</guid>
       <description>&lt;p&gt;&lt;strong&gt;Instructions from Halide blogs&lt;/strong&gt;&lt;/p&gt;&#xA;&lt;ol&gt;&#xA;&lt;li&gt;Install cmake if your don&amp;rsquo;t have it already.&lt;/li&gt;&#xA;&lt;/ol&gt;&#xA;&lt;p&gt;Download the precompiled binaries from: &lt;a href=&#34;https://cmake.org/download/&#34;  class=&#34;external-link&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;https://cmake.org/download/&lt;/a&gt;&lt;/p&gt;&#xA;&lt;p&gt;If you prefer installing from the source, follow the instructions on the page.&lt;/p&gt;&#xA;&lt;ol start=&#34;2&#34;&gt;&#xA;&lt;li&gt;The second step is to install halide with vcpkg. Run the following command once you have installed vcpkg.&lt;/li&gt;&#xA;&lt;/ol&gt;&#xA;&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;&lt;code class=&#34;language-fallback&#34; data-lang=&#34;fallback&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;xxx@xxx-os:~$ ./vcpkg/vcpkg install halide:x64-linux&#xA;&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;After some log ..&lt;/p&gt;&#xA;&lt;p&gt;Total elapsed time: 55.61 min&lt;/p&gt;&#xA;&lt;p&gt;The package halide provides CMake targets:&lt;/p&gt;&#xA;&lt;pre&gt;&lt;code&gt;set(CMAKE_CXX_STANDARD 17)&#xA;set(CMAKE_CXX_STANDARD_REQUIRED YES)&#xA;set(CMAKE_CXX_EXTENSIONS NO)&#xA;&#xA;find_package(Halide REQUIRED)&#xA;&#xA;# JIT mode:&#xA;add_executable(my_halide_app main.cpp)&#xA;target_link_libraries(my_halide_app PRIVATE Halide::Halide)&#xA;&#xA;# AOT mode:&#xA;add_executable(my_generators my_generators.cpp)&#xA;target_link_libraries(my_generators PRIVATE Halide::Generator)&#xA;add_halide_library(my_first_generator FROM my_generators)&#xA;add_halide_library(my_second_generator FROM my_generators&#xA;    PARAMS parallel=false scale=3.0 rotation=ccw output.type=uint16)&#xA;add_halide_library(my_second_generator_2 FROM my_generators&#xA;    GENERATOR my_second_generator&#xA;    PARAMS scale=9.0 rotation=ccw output.type=float32)&#xA;add_halide_library(my_second_generator_3 FROM my_generators&#xA;    GENERATOR my_second_generator&#xA;    PARAMS parallel=false output.type=float64)&#xA;&lt;/code&gt;&lt;/pre&gt;&#xA;&lt;p&gt;For more information see:&#xA;&lt;a href=&#34;https://github.com/halide/Halide/blob/v13.0.2/README_cmake.md&#34;  class=&#34;external-link&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;https://github.com/halide/Halide/blob/v13.0.2/README_cmake.md&lt;/a&gt;&#xA;`&lt;/p&gt;</description>
     </item>
     <item>
       <title>Halide</title>
-      <link>http://localhost:1313/posts/halide_dsl/</link>
+      <link>https://pavanimajety.github.io/posts/halide_dsl/</link>
       <pubDate>Sat, 15 Jan 2022 11:29:43 -0500</pubDate>
-      <guid>http://localhost:1313/posts/halide_dsl/</guid>
+      <guid>https://pavanimajety.github.io/posts/halide_dsl/</guid>
       <description>&lt;p&gt;Sources: &lt;a href=&#34;https://www.youtube.com/watch?v=1ir_nEfKQ7A&#34;  class=&#34;external-link&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Halide Cpp Con 2020 1&lt;/a&gt;&#xA;&lt;a href=&#34;https://martinfowler.com/bliki/InternalDslStyle.html&#34;  class=&#34;external-link&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Martin Fowler Internal DSLs 2&lt;/a&gt;&lt;/p&gt;&#xA;&lt;p&gt;Let&amp;rsquo;s talk domain specific languages.. If you don&amp;rsquo;t know about these, let&amp;rsquo;s just say domain specific languages are programming languages that are specialized and restricted to best meet the needs of a specific domain. The goal of a DSL is exploit those restrictions for faster performance, easier maintenance, safety guarentees and so on. The most popular one most of you all know is HTML &amp;ndash; short for HyperText Markup Language. HTML only serves to do one thing - it is a &lt;a href=&#34;https://en.wikipedia.org/wiki/Markup_language&#34;  class=&#34;external-link&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;&amp;ldquo;markup&#xA;language&amp;rdquo;&lt;/a&gt; that is designed for displaying documents on web browser. You cannot do mathematical computations using HTML.&lt;/p&gt;</description>
     </item>
   </channel>

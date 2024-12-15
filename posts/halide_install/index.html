@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 
-<head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script>
+<head>
   <title>
   Installing Halide in Ubuntu/Pop OS with vcpkg · Pavani Majety
 </title>
@@ -66,7 +66,7 @@ Total elapsed time: 55.61 min
 The package halide provides CMake targets:
 set(CMAKE_CXX_STANDARD 17) set(CMAKE_CXX_STANDARD_REQUIRED YES) set(CMAKE_CXX_EXTENSIONS NO) find_package(Halide REQUIRED) # JIT mode: add_executable(my_halide_app main.cpp) target_link_libraries(my_halide_app PRIVATE Halide::Halide) # AOT mode: add_executable(my_generators my_generators.cpp) target_link_libraries(my_generators PRIVATE Halide::Generator) add_halide_library(my_first_generator FROM my_generators) add_halide_library(my_second_generator FROM my_generators PARAMS parallel=false scale=3.0 rotation=ccw output.type=uint16) add_halide_library(my_second_generator_2 FROM my_generators GENERATOR my_second_generator PARAMS scale=9.0 rotation=ccw output.type=float32) add_halide_library(my_second_generator_3 FROM my_generators GENERATOR my_second_generator PARAMS parallel=false output.type=float64) For more information see: https://github.com/halide/Halide/blob/v13.0.2/README_cmake.md `">
 
-<meta property="og:url" content="http://localhost:1313/posts/halide_install/">
+<meta property="og:url" content="https://pavanimajety.github.io/posts/halide_install/">
   <meta property="og:site_name" content="Pavani Majety">
   <meta property="og:title" content="Installing Halide in Ubuntu/Pop OS with vcpkg">
   <meta property="og:description" content="Instructions from Halide blogs
@@ -85,7 +85,7 @@ set(CMAKE_CXX_STANDARD 17) set(CMAKE_CXX_STANDARD_REQUIRED YES) set(CMAKE_CXX_EX
 
 
 
-<link rel="canonical" href="http://localhost:1313/posts/halide_install/">
+<link rel="canonical" href="https://pavanimajety.github.io/posts/halide_install/">
 
 
 <link rel="preload" href="/fonts/fa-brands-400.woff2" as="font" type="font/woff2" crossorigin>
@@ -95,7 +95,7 @@ set(CMAKE_CXX_STANDARD 17) set(CMAKE_CXX_STANDARD_REQUIRED YES) set(CMAKE_CXX_EX
 
   
   
-  <link rel="stylesheet" href="/css/coder.css" media="screen">
+  <link rel="stylesheet" href="/css/coder.min.aa5ef26fa979d6793724ae2dbd71efa94fd16cb1c5c7db3b6651f21f9892a5fd.css" integrity="sha256-ql7yb6l51nk3JK4tvXHvqU/RbLHFx9s7ZlHyH5iSpf0=" crossorigin="anonymous" media="screen" />
 
 
 
@@ -105,7 +105,7 @@ set(CMAKE_CXX_STANDARD 17) set(CMAKE_CXX_STANDARD_REQUIRED YES) set(CMAKE_CXX_EX
   
     
     
-    <link rel="stylesheet" href="/css/coder-dark.css" media="screen">
+    <link rel="stylesheet" href="/css/coder-dark.min.a00e6364bacbc8266ad1cc81230774a1397198f8cfb7bcba29b7d6fcb54ce57f.css" integrity="sha256-oA5jZLrLyCZq0cyBIwd0oTlxmPjPt7y6KbfW/LVM5X8=" crossorigin="anonymous" media="screen" />
   
 
 
@@ -153,7 +153,7 @@ set(CMAKE_CXX_STANDARD 17) set(CMAKE_CXX_STANDARD_REQUIRED YES) set(CMAKE_CXX_EX
     <nav class="navigation">
   <section class="container">
     
-    <a class="navigation-title" href="http://localhost:1313/">
+    <a class="navigation-title" href="https://pavanimajety.github.io/">
       Pavani Majety
     </a>
     
@@ -192,7 +192,7 @@ set(CMAKE_CXX_STANDARD 17) set(CMAKE_CXX_STANDARD_REQUIRED YES) set(CMAKE_CXX_EX
       <header>
         <div class="post-title">
           <h1 class="title">
-            <a class="title-link" href="http://localhost:1313/posts/halide_install/">
+            <a class="title-link" href="https://pavanimajety.github.io/posts/halide_install/">
               Installing Halide in Ubuntu/Pop OS with vcpkg
             </a>
           </h1>
@@ -333,7 +333,7 @@ add_halide_library(my_second_generator_3 FROM my_generators
 
   
   
-  <script src="/js/coder.js"></script>
+  <script src="/js/coder.min.6ae284be93d2d19dad1f02b0039508d9aab3180a12a06dcc71b0b0ef7825a317.js" integrity="sha256-auKEvpPS0Z2tHwKwA5UI2aqzGAoSoG3McbCw73gloxc="></script>
   
 
   
