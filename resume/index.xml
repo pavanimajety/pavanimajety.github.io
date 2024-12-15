@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Resumes on Pavani Majety</title>
+    <link>http://localhost:1313/resume/</link>
+    <description>Recent content in Resumes on Pavani Majety</description>
+    <generator>Hugo</generator>
+    <language>en-us</language>
+    <lastBuildDate>Thu, 23 Mar 2023 00:00:00 +0000</lastBuildDate>
+    <atom:link href="http://localhost:1313/resume/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Pavani Majety&#39;s Resume</title>
+      <link>http://localhost:1313/resume/resume/</link>
+      <pubDate>Thu, 23 Mar 2023 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/resume/resume/</guid>
+      <description>&lt;h3 id=&#34;work-experience&#34;&gt;&#xA;  Work Experience&#xA;  &lt;a class=&#34;heading-link&#34; href=&#34;#work-experience&#34;&gt;&#xA;    &lt;i class=&#34;fa-solid fa-link&#34; aria-hidden=&#34;true&#34; title=&#34;Link to heading&#34;&gt;&lt;/i&gt;&#xA;    &lt;span class=&#34;sr-only&#34;&gt;Link to heading&lt;/span&gt;&#xA;  &lt;/a&gt;&#xA;&lt;/h3&gt;&#xA;&lt;h4 id=&#34;current-senior-deep-learning-engineer-dl-compilers-nvidia&#34;&gt;&#xA;  (Current) Senior Deep Learning Engineer, DL Compilers, NVIDIA&#xA;  &lt;a class=&#34;heading-link&#34; href=&#34;#current-senior-deep-learning-engineer-dl-compilers-nvidia&#34;&gt;&#xA;    &lt;i class=&#34;fa-solid fa-link&#34; aria-hidden=&#34;true&#34; title=&#34;Link to heading&#34;&gt;&lt;/i&gt;&#xA;    &lt;span class=&#34;sr-only&#34;&gt;Link to heading&lt;/span&gt;&#xA;  &lt;/a&gt;&#xA;&lt;/h4&gt;&#xA;&lt;p&gt;June 2022 - Present&lt;/p&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;Contributed to Tensorflow-TensorRT integration to generate efficient inference code for running on NVIDIA&amp;rsquo;s GPUs, utilizing the TensorRT libraries. My contributions can be found on my github account.&lt;/li&gt;&#xA;&lt;li&gt;Developing ops for a new MLIR dialect that helps convert MHLO / Stable HLO for NVIDIA GPUS with PJRT backend to XLA.&lt;/li&gt;&#xA;&lt;li&gt;(Near future) Contributions to the IREE project from NVIDIA.&lt;/li&gt;&#xA;&lt;li&gt;Mentoring IC1-IC2 engineers through multiple mentorship programs at NVIDIA.&lt;/li&gt;&#xA;&lt;li&gt;Member of WIT Mentorship team at NVIDIA, Women In Compilers and LLVM meetup groups.&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;h4 id=&#34;software-engineer--mathworks&#34;&gt;&#xA;  Software Engineer,  Mathworks&#xA;  &lt;a class=&#34;heading-link&#34; href=&#34;#software-engineer--mathworks&#34;&gt;&#xA;    &lt;i class=&#34;fa-solid fa-link&#34; aria-hidden=&#34;true&#34; title=&#34;Link to heading&#34;&gt;&lt;/i&gt;&#xA;    &lt;span class=&#34;sr-only&#34;&gt;Link to heading&lt;/span&gt;&#xA;  &lt;/a&gt;&#xA;&lt;/h4&gt;&#xA;&lt;p&gt;March 2018 - May 2022&lt;/p&gt;</description>
+    </item>
+  </channel>
+</rss>
