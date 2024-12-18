@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Pavani on Pavani Majety</title>
+    <link>http://localhost:1313/authors/pavani/</link>
+    <description>Recent content in Pavani on Pavani Majety</description>
+    <generator>Hugo</generator>
+    <language>en-us</language>
+    <lastBuildDate>Sat, 14 Dec 2024 17:40:03 -0800</lastBuildDate>
+    <atom:link href="http://localhost:1313/authors/pavani/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>CUDA Fundamentals</title>
+      <link>http://localhost:1313/posts/cuda-fundamentals-theory/</link>
+      <pubDate>Sat, 14 Dec 2024 17:40:03 -0800</pubDate>
+      <guid>http://localhost:1313/posts/cuda-fundamentals-theory/</guid>
+      <description>&lt;h2 id=&#34;cuda-fundamentals&#34;&gt;&#xA;  CUDA Fundamentals&#xA;  &lt;a class=&#34;heading-link&#34; href=&#34;#cuda-fundamentals&#34;&gt;&#xA;    &lt;i class=&#34;fa-solid fa-link&#34; aria-hidden=&#34;true&#34; title=&#34;Link to heading&#34;&gt;&lt;/i&gt;&#xA;    &lt;span class=&#34;sr-only&#34;&gt;Link to heading&lt;/span&gt;&#xA;  &lt;/a&gt;&#xA;&lt;/h2&gt;&#xA;&lt;p&gt;Theoretical Foundation&lt;/p&gt;&#xA;&lt;h2 id=&#34;gpu-architecture-understanding-for-a-genai-world&#34;&gt;&#xA;  GPU Architecture Understanding For a GenAI world&#xA;  &lt;a class=&#34;heading-link&#34; href=&#34;#gpu-architecture-understanding-for-a-genai-world&#34;&gt;&#xA;    &lt;i class=&#34;fa-solid fa-link&#34; aria-hidden=&#34;true&#34; title=&#34;Link to heading&#34;&gt;&lt;/i&gt;&#xA;    &lt;span class=&#34;sr-only&#34;&gt;Link to heading&lt;/span&gt;&#xA;  &lt;/a&gt;&#xA;&lt;/h2&gt;&#xA;&lt;p&gt;Resources&#xA;[]&#xA;[]&#xA;[]&lt;/p&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;CUDA Programming Model&lt;/li&gt;&#xA;&lt;li&gt;Memory Hierarchy in GPUs&lt;/li&gt;&#xA;&lt;li&gt;Thread/Block/Grid Concepts&lt;/li&gt;&#xA;&lt;li&gt;General Kernel Programming principles&lt;/li&gt;&#xA;&lt;/ul&gt;</description>
+    </item>
+  </channel>
+</rss>

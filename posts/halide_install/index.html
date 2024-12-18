@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 
-<head>
+<head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script>
   <title>
   Installing Halide in Ubuntu/Pop OS with vcpkg · Pavani Majety
 </title>
@@ -22,36 +22,36 @@ If you prefer installing from the source, follow the instructions on the page.
 
 The second step is to install halide with vcpkg. Run the following command once you have installed vcpkg.
 
-xxx@xxx-os:~$ ./vcpkg/vcpkg install halide:x64-linux
+$ ./vcpkg/vcpkg install halide:x64-linux
 After some log ..
 Total elapsed time: 55.61 min
 The package halide provides CMake targets:
-set(CMAKE_CXX_STANDARD 17)
-set(CMAKE_CXX_STANDARD_REQUIRED YES)
-set(CMAKE_CXX_EXTENSIONS NO)
+    set(CMAKE_CXX_STANDARD 17)
+    set(CMAKE_CXX_STANDARD_REQUIRED YES)
+    set(CMAKE_CXX_EXTENSIONS NO)
 
-find_package(Halide REQUIRED)
+    find_package(Halide REQUIRED)
 
-# JIT mode:
-add_executable(my_halide_app main.cpp)
-target_link_libraries(my_halide_app PRIVATE Halide::Halide)
+    # JIT mode:
+    add_executable(my_halide_app main.cpp)
+    target_link_libraries(my_halide_app PRIVATE Halide::Halide)
 
-# AOT mode:
-add_executable(my_generators my_generators.cpp)
-target_link_libraries(my_generators PRIVATE Halide::Generator)
-add_halide_library(my_first_generator FROM my_generators)
-add_halide_library(my_second_generator FROM my_generators
-    PARAMS parallel=false scale=3.0 rotation=ccw output.type=uint16)
-add_halide_library(my_second_generator_2 FROM my_generators
-    GENERATOR my_second_generator
-    PARAMS scale=9.0 rotation=ccw output.type=float32)
-add_halide_library(my_second_generator_3 FROM my_generators
-    GENERATOR my_second_generator
-    PARAMS parallel=false output.type=float64)
+    # AOT mode:
+    add_executable(my_generators my_generators.cpp)
+    target_link_libraries(my_generators PRIVATE Halide::Generator)
+    add_halide_library(my_first_generator FROM my_generators)
+    add_halide_library(my_second_generator FROM my_generators
+        PARAMS parallel=false scale=3.0 rotation=ccw output.type=uint16)
+    add_halide_library(my_second_generator_2 FROM my_generators
+        GENERATOR my_second_generator
+        PARAMS scale=9.0 rotation=ccw output.type=float32)
+    add_halide_library(my_second_generator_3 FROM my_generators
+        GENERATOR my_second_generator
+        PARAMS parallel=false output.type=float64)
 
 For more information see:
-https://github.com/halide/Halide/blob/v13.0.2/README_cmake.md
-`">
+    https://github.com/halide/Halide/blob/v13.0.2/README_cmake.md
+This appears to have installed Halide. To confirm installation, let&rsquo;s try the first tutorial from the halide github page -">
 <meta name="keywords" content="blog,developer,personal">
 
 
@@ -61,21 +61,21 @@ https://github.com/halide/Halide/blob/v13.0.2/README_cmake.md
   <meta name="twitter:description" content="Instructions from Halide blogs
 Install cmake if your don’t have it already. Download the precompiled binaries from: https://cmake.org/download/
 If you prefer installing from the source, follow the instructions on the page.
-The second step is to install halide with vcpkg. Run the following command once you have installed vcpkg. xxx@xxx-os:~$ ./vcpkg/vcpkg install halide:x64-linux After some log ..
+The second step is to install halide with vcpkg. Run the following command once you have installed vcpkg. $ ./vcpkg/vcpkg install halide:x64-linux After some log ..
 Total elapsed time: 55.61 min
 The package halide provides CMake targets:
-set(CMAKE_CXX_STANDARD 17) set(CMAKE_CXX_STANDARD_REQUIRED YES) set(CMAKE_CXX_EXTENSIONS NO) find_package(Halide REQUIRED) # JIT mode: add_executable(my_halide_app main.cpp) target_link_libraries(my_halide_app PRIVATE Halide::Halide) # AOT mode: add_executable(my_generators my_generators.cpp) target_link_libraries(my_generators PRIVATE Halide::Generator) add_halide_library(my_first_generator FROM my_generators) add_halide_library(my_second_generator FROM my_generators PARAMS parallel=false scale=3.0 rotation=ccw output.type=uint16) add_halide_library(my_second_generator_2 FROM my_generators GENERATOR my_second_generator PARAMS scale=9.0 rotation=ccw output.type=float32) add_halide_library(my_second_generator_3 FROM my_generators GENERATOR my_second_generator PARAMS parallel=false output.type=float64) For more information see: https://github.com/halide/Halide/blob/v13.0.2/README_cmake.md `">
+set(CMAKE_CXX_STANDARD 17) set(CMAKE_CXX_STANDARD_REQUIRED YES) set(CMAKE_CXX_EXTENSIONS NO) find_package(Halide REQUIRED) # JIT mode: add_executable(my_halide_app main.cpp) target_link_libraries(my_halide_app PRIVATE Halide::Halide) # AOT mode: add_executable(my_generators my_generators.cpp) target_link_libraries(my_generators PRIVATE Halide::Generator) add_halide_library(my_first_generator FROM my_generators) add_halide_library(my_second_generator FROM my_generators PARAMS parallel=false scale=3.0 rotation=ccw output.type=uint16) add_halide_library(my_second_generator_2 FROM my_generators GENERATOR my_second_generator PARAMS scale=9.0 rotation=ccw output.type=float32) add_halide_library(my_second_generator_3 FROM my_generators GENERATOR my_second_generator PARAMS parallel=false output.type=float64) For more information see: https://github.com/halide/Halide/blob/v13.0.2/README_cmake.md This appears to have installed Halide. To confirm installation, let’s try the first tutorial from the halide github page -">
 
-<meta property="og:url" content="https://pavanimajety.github.io/posts/halide_install/">
+<meta property="og:url" content="http://localhost:1313/posts/halide_install/">
   <meta property="og:site_name" content="Pavani Majety">
   <meta property="og:title" content="Installing Halide in Ubuntu/Pop OS with vcpkg">
   <meta property="og:description" content="Instructions from Halide blogs
 Install cmake if your don’t have it already. Download the precompiled binaries from: https://cmake.org/download/
 If you prefer installing from the source, follow the instructions on the page.
-The second step is to install halide with vcpkg. Run the following command once you have installed vcpkg. xxx@xxx-os:~$ ./vcpkg/vcpkg install halide:x64-linux After some log ..
+The second step is to install halide with vcpkg. Run the following command once you have installed vcpkg. $ ./vcpkg/vcpkg install halide:x64-linux After some log ..
 Total elapsed time: 55.61 min
 The package halide provides CMake targets:
-set(CMAKE_CXX_STANDARD 17) set(CMAKE_CXX_STANDARD_REQUIRED YES) set(CMAKE_CXX_EXTENSIONS NO) find_package(Halide REQUIRED) # JIT mode: add_executable(my_halide_app main.cpp) target_link_libraries(my_halide_app PRIVATE Halide::Halide) # AOT mode: add_executable(my_generators my_generators.cpp) target_link_libraries(my_generators PRIVATE Halide::Generator) add_halide_library(my_first_generator FROM my_generators) add_halide_library(my_second_generator FROM my_generators PARAMS parallel=false scale=3.0 rotation=ccw output.type=uint16) add_halide_library(my_second_generator_2 FROM my_generators GENERATOR my_second_generator PARAMS scale=9.0 rotation=ccw output.type=float32) add_halide_library(my_second_generator_3 FROM my_generators GENERATOR my_second_generator PARAMS parallel=false output.type=float64) For more information see: https://github.com/halide/Halide/blob/v13.0.2/README_cmake.md `">
+set(CMAKE_CXX_STANDARD 17) set(CMAKE_CXX_STANDARD_REQUIRED YES) set(CMAKE_CXX_EXTENSIONS NO) find_package(Halide REQUIRED) # JIT mode: add_executable(my_halide_app main.cpp) target_link_libraries(my_halide_app PRIVATE Halide::Halide) # AOT mode: add_executable(my_generators my_generators.cpp) target_link_libraries(my_generators PRIVATE Halide::Generator) add_halide_library(my_first_generator FROM my_generators) add_halide_library(my_second_generator FROM my_generators PARAMS parallel=false scale=3.0 rotation=ccw output.type=uint16) add_halide_library(my_second_generator_2 FROM my_generators GENERATOR my_second_generator PARAMS scale=9.0 rotation=ccw output.type=float32) add_halide_library(my_second_generator_3 FROM my_generators GENERATOR my_second_generator PARAMS parallel=false output.type=float64) For more information see: https://github.com/halide/Halide/blob/v13.0.2/README_cmake.md This appears to have installed Halide. To confirm installation, let’s try the first tutorial from the halide github page -">
   <meta property="og:locale" content="en_us">
   <meta property="og:type" content="article">
     <meta property="article:section" content="posts">
@@ -85,7 +85,7 @@ set(CMAKE_CXX_STANDARD 17) set(CMAKE_CXX_STANDARD_REQUIRED YES) set(CMAKE_CXX_EX
 
 
 
-<link rel="canonical" href="https://pavanimajety.github.io/posts/halide_install/">
+<link rel="canonical" href="http://localhost:1313/posts/halide_install/">
 
 
 <link rel="preload" href="/fonts/fa-brands-400.woff2" as="font" type="font/woff2" crossorigin>
@@ -95,7 +95,7 @@ set(CMAKE_CXX_STANDARD 17) set(CMAKE_CXX_STANDARD_REQUIRED YES) set(CMAKE_CXX_EX
 
   
   
-  <link rel="stylesheet" href="/css/coder.min.aa5ef26fa979d6793724ae2dbd71efa94fd16cb1c5c7db3b6651f21f9892a5fd.css" integrity="sha256-ql7yb6l51nk3JK4tvXHvqU/RbLHFx9s7ZlHyH5iSpf0=" crossorigin="anonymous" media="screen" />
+  <link rel="stylesheet" href="/css/coder.css" media="screen">
 
 
 
@@ -105,7 +105,7 @@ set(CMAKE_CXX_STANDARD 17) set(CMAKE_CXX_STANDARD_REQUIRED YES) set(CMAKE_CXX_EX
   
     
     
-    <link rel="stylesheet" href="/css/coder-dark.min.a00e6364bacbc8266ad1cc81230774a1397198f8cfb7bcba29b7d6fcb54ce57f.css" integrity="sha256-oA5jZLrLyCZq0cyBIwd0oTlxmPjPt7y6KbfW/LVM5X8=" crossorigin="anonymous" media="screen" />
+    <link rel="stylesheet" href="/css/coder-dark.css" media="screen">
   
 
 
@@ -153,7 +153,7 @@ set(CMAKE_CXX_STANDARD 17) set(CMAKE_CXX_STANDARD_REQUIRED YES) set(CMAKE_CXX_EX
     <nav class="navigation">
   <section class="container">
     
-    <a class="navigation-title" href="https://pavanimajety.github.io/">
+    <a class="navigation-title" href="http://localhost:1313/">
       Pavani Majety
     </a>
     
@@ -192,7 +192,7 @@ set(CMAKE_CXX_STANDARD 17) set(CMAKE_CXX_STANDARD_REQUIRED YES) set(CMAKE_CXX_EX
       <header>
         <div class="post-title">
           <h1 class="title">
-            <a class="title-link" href="https://pavanimajety.github.io/posts/halide_install/">
+            <a class="title-link" href="http://localhost:1313/posts/halide_install/">
               Installing Halide in Ubuntu/Pop OS with vcpkg
             </a>
           </h1>
@@ -227,37 +227,36 @@ set(CMAKE_CXX_STANDARD 17) set(CMAKE_CXX_STANDARD_REQUIRED YES) set(CMAKE_CXX_EX
 <ol start="2">
 <li>The second step is to install halide with vcpkg. Run the following command once you have installed vcpkg.</li>
 </ol>
-<div class="highlight"><pre tabindex="0" style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-fallback" data-lang="fallback"><span style="display:flex;"><span>xxx@xxx-os:~$ ./vcpkg/vcpkg install halide:x64-linux
+<div class="highlight"><pre tabindex="0" style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-fallback" data-lang="fallback"><span style="display:flex;"><span>$ ./vcpkg/vcpkg install halide:x64-linux
 </span></span></code></pre></div><p>After some log ..</p>
 <p>Total elapsed time: 55.61 min</p>
 <p>The package halide provides CMake targets:</p>
-<pre><code>set(CMAKE_CXX_STANDARD 17)
-set(CMAKE_CXX_STANDARD_REQUIRED YES)
-set(CMAKE_CXX_EXTENSIONS NO)
-
-find_package(Halide REQUIRED)
-
-# JIT mode:
-add_executable(my_halide_app main.cpp)
-target_link_libraries(my_halide_app PRIVATE Halide::Halide)
-
-# AOT mode:
-add_executable(my_generators my_generators.cpp)
-target_link_libraries(my_generators PRIVATE Halide::Generator)
-add_halide_library(my_first_generator FROM my_generators)
-add_halide_library(my_second_generator FROM my_generators
-    PARAMS parallel=false scale=3.0 rotation=ccw output.type=uint16)
-add_halide_library(my_second_generator_2 FROM my_generators
-    GENERATOR my_second_generator
-    PARAMS scale=9.0 rotation=ccw output.type=float32)
-add_halide_library(my_second_generator_3 FROM my_generators
-    GENERATOR my_second_generator
-    PARAMS parallel=false output.type=float64)
-</code></pre>
-<p>For more information see:
-<a href="https://github.com/halide/Halide/blob/v13.0.2/README_cmake.md"  class="external-link" target="_blank" rel="noopener">https://github.com/halide/Halide/blob/v13.0.2/README_cmake.md</a>
-`</p>
-<p>This appears to have installed Halide. To confirm installation, let&rsquo;s try the first tutorial from the halide github page -</p>
+<div class="highlight"><pre tabindex="0" style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-fallback" data-lang="fallback"><span style="display:flex;"><span>    set(CMAKE_CXX_STANDARD 17)
+</span></span><span style="display:flex;"><span>    set(CMAKE_CXX_STANDARD_REQUIRED YES)
+</span></span><span style="display:flex;"><span>    set(CMAKE_CXX_EXTENSIONS NO)
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>    find_package(Halide REQUIRED)
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>    # JIT mode:
+</span></span><span style="display:flex;"><span>    add_executable(my_halide_app main.cpp)
+</span></span><span style="display:flex;"><span>    target_link_libraries(my_halide_app PRIVATE Halide::Halide)
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>    # AOT mode:
+</span></span><span style="display:flex;"><span>    add_executable(my_generators my_generators.cpp)
+</span></span><span style="display:flex;"><span>    target_link_libraries(my_generators PRIVATE Halide::Generator)
+</span></span><span style="display:flex;"><span>    add_halide_library(my_first_generator FROM my_generators)
+</span></span><span style="display:flex;"><span>    add_halide_library(my_second_generator FROM my_generators
+</span></span><span style="display:flex;"><span>        PARAMS parallel=false scale=3.0 rotation=ccw output.type=uint16)
+</span></span><span style="display:flex;"><span>    add_halide_library(my_second_generator_2 FROM my_generators
+</span></span><span style="display:flex;"><span>        GENERATOR my_second_generator
+</span></span><span style="display:flex;"><span>        PARAMS scale=9.0 rotation=ccw output.type=float32)
+</span></span><span style="display:flex;"><span>    add_halide_library(my_second_generator_3 FROM my_generators
+</span></span><span style="display:flex;"><span>        GENERATOR my_second_generator
+</span></span><span style="display:flex;"><span>        PARAMS parallel=false output.type=float64)
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>For more information see:
+</span></span><span style="display:flex;"><span>    https://github.com/halide/Halide/blob/v13.0.2/README_cmake.md
+</span></span></code></pre></div><p>This appears to have installed Halide. To confirm installation, let&rsquo;s try the first tutorial from the halide github page -</p>
 <p><a href="https://halide-lang.org/tutorials/tutorial_lesson_01_basics.html"  class="external-link" target="_blank" rel="noopener">lesson_01_basics.cpp</a></p>
 <p>To do this - I created a file with the same name in my test. I installed <code>vcpkg</code> in my <code>home</code> directory. So all my halide files are stored in the vcpkg folder in my home directory.</p>
 <p>To compile the file - I ran:</p>
@@ -333,13 +332,15 @@ add_halide_library(my_second_generator_3 FROM my_generators
 
   
   
-  <script src="/js/coder.min.6ae284be93d2d19dad1f02b0039508d9aab3180a12a06dcc71b0b0ef7825a317.js" integrity="sha256-auKEvpPS0Z2tHwKwA5UI2aqzGAoSoG3McbCw73gloxc="></script>
+  <script src="/js/coder.js"></script>
   
 
   
 
   
 
+
+  
 
   
 
